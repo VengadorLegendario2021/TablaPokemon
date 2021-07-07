@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background: url(nb.jpg);
+background-size: cover;
+background-attachment:fixed;
+font-family: "Century Gothic",sans-serif;
+}
+.p {
+    width: 50%;
+    }
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 600px;
+
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.container{
+    width: 100%;
+    height: 90px;
+    background: #3d3d3d;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top:0;
+}
+
+.logo{
+    width: 87px;
+    margin: 0;
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+.contenedorPrin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art1{
+    width: 83%;
+}
+
+.art2{
+    width: 83%;
+
+}
+
+.art3{
+    width: 83%;
+
+}
+
+.art4{
+    width: 83%;
+
+}
+
+.art5{
+    width: 83%;
+
+}
+
+.banner{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px 10px;
+    margin: auto;
+    background-size: cover;
+
+    animation: banner 4.5s infinite;
+    animation-direction:alternate;
+}
+
+@keyframes banner{
+    0%, 30%{
+    background-image: url(imagenes/imagen1.jpg);
+    opacity: 1;
+}
+    31%,34%{
+    opacity: 0.1;
+}
+    35%, 65%{
+    background-image: url(imagenes/imagen2.jpg);
+    opacity: 1;
+}
+    66%,69%{
+    opacity: 0.1;
+}
+    70%, 100%{
+    background-image: url(imagenes/imagen3.jpg);
+    opacity: 1;
+}
+    31%,34%{
+    opacity: 0.1;
+}
+
+ 70%, 100%{
+    background-image: url(imagenes/imagen4.jpg);
+    opacity: 1;
+}
+    31%,34%{
+    opacity: 0.1;
+}
+
+}
+img{
+    border-radius: 15px 15px;
+}
+
+.contenedor fieldset{
+    font-family: Century Gothic;
+    background:url(ml.gif);
+    background-size: cover;
+    padding: 20px 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px ;
+    margin-top: 5px 56px;
+    width: 185px;
+    height: 260px;
+}
+
+.img-efecto img{
+    -webkit-transition: all 0.9 ease; /*Safari & Chrome*/
+    -moz-transition:all 0.9 ease; /*Firefox*/
+    -o-transition: all 0.9 ease; /*opera*/
+    -ms-transition: all 0.9 ease; /*Edge IE*/
+    width: 100%;
+    height: 35%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img-efecto{
+    width: 150px;
+    height: 430px;
+}
+
+.img-efecto:hover img{
+    -webkit-transform: scale(1.10) ;
+    -moz-transform: scale(1.10) ;
+    -o-transform: scale(1.10) ;
+    -ms-transform: scale(1.10) ;
+    transform: scale(1.10) ;
+}
+
+.text {
+  font: 10.5em/1 Impact, Impact;
+  fill:none;
+  stroke-width: 8;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #FFBB00;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #0ED9E8;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #505050;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #FFBB00;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #0ED9E8;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
